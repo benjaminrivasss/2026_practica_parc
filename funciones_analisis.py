@@ -15,3 +15,9 @@ def separar_viento(campo_viento: str) -> tuple:
         velocidad = float(partes[-1])
     
         return (direccion, velocidad)
+
+def leer_observaciones(ruta: str) -> dict:
+    """Lee el archivo de observaciones del SMN y devuelve un diccionario
+    {ciudad: datos}, con los nombres de ciudad limpios y el campo de viento
+    ya separado en dirección y velocidad."""
+
