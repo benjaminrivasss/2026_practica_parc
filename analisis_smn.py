@@ -1,2 +1,2 @@
-with open("tiempo_datos.txt", "r", encoding="utf-8") as file:
-    
+import funciones_analisis as funsis
+funsis.cantidad_ciudades_completas("tiempo_datos.txt")
