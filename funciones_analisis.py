@@ -14,7 +14,7 @@ def separar_viento(campo_viento: str) -> tuple:
         direccion = " ".join(partes[:-1])
         velocidad = float(partes[-1])
         return (direccion, velocidad)
-#cambiar y rearmar para seguir la naturaleza de la consigna, se debe buscar linea por linea las que no tienen valores completos
+#cambiar y rearmar para seguir la naturaleza de la consigna, se debe utilizar el parametro observaciones en cantidad_ciudades, para que quede consistente
 def leer_observaciones(ruta: str) -> dict:
     """Lee el archivo de observaciones del SMN y devuelve un diccionario
     {ciudad: datos}, con los nombres de ciudad limpios y el campo de viento
